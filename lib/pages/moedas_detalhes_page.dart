@@ -60,23 +60,20 @@ class _MoedasDetalhesState extends State<MoedasDetalhes> {
             ),
             SizedBox(height: 10),
             (_valorMoeda > 0)
-                ? Card(
-                    elevation: 2,
-                    child: Container(
-                      width: MediaQuery.of(context).size.width,
-                      padding: EdgeInsets.only(top: 10, bottom: 10),
-                      child: Center(
-                        child: Text(
-                          "${widget.moeda.sigla}:    ${_valorMoeda}",
-                          style: TextStyle(
-                            fontSize: 20,
-                            color: Colors.teal,
-                          ),
+                ? Container(
+                    width: MediaQuery.of(context).size.width,
+                    padding: EdgeInsets.only(top: 10, bottom: 10),
+                    child: Center(
+                      child: Text(
+                        "${widget.moeda.sigla}:    ${_valorMoeda}",
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.teal,
                         ),
                       ),
-                      decoration: BoxDecoration(
-                        color: Colors.teal.withOpacity(0.09),
-                      ),
+                    ),
+                    decoration: BoxDecoration(
+                      color: Colors.teal.withOpacity(0.05),
                     ),
                   )
                 : SizedBox(
